@@ -1,0 +1,52 @@
+/* Universal code */
+html {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header DESKTOP */
+
+header .desktop  {
+  display: flex;
+  height: 4rem;
+  margin: 0 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header #bold {
+  font-weight: bold;
+  color: black;
+}
+
+header span {
+  letter-spacing: 0.1rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  color: Silver;
+}
+
+header a {
+  margin-left: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Header MOBILE */
+
+
+
+/* Header END */

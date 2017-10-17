@@ -34,7 +34,7 @@ header span {
   letter-spacing: 0.1rem;
   height: 2.5rem;
   margin-top: 1rem;
-  color: Silver;
+  color: #A19EA9;
 }
 
 header a {
@@ -50,3 +50,50 @@ header .mobile {
 
 
 /* Header END */
+
+/* Banner DESKTOP */
+.banner .flex {
+  display: flex;
+  background-color: #A19EA9;
+  justify-content: center;
+}
+
+.flex .banner-image {
+  
+}
+
+.banner-image img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text h1 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text h3 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.banner-text button {
+  background-color: #5A585F;
+  border: none;
+  padding: 1rem 5rem;
+  text-align: center;
+}
+
+button span {
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+}

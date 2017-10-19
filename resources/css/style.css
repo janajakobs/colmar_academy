@@ -56,13 +56,16 @@ header .mobile {
   display: flex;
   background-color: #A19EA9;
   justify-content: center;
+  height: 32rem;
 }
 
-.flex .banner-image {
-  
+.banner-image {
+  display: flex;
+  width: 70%;
 }
 
 .banner-image img {
+  height: 90%;
   width: 60%;
   margin: 2rem 1.5rem;
 }

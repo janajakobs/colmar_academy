@@ -46,13 +46,20 @@ header .mobile {
   display: none;
 }
 
-.nav a:hover {
-  color: #570080;
+/* Links - color change */
+header a:link {
+  color: #242126;
 }
 
-.nav a:visited {
-  color: #CCC4CC;
+header a:visited {
+ color: #CCC4CC;
 }
+
+ header a:hover {
+  color: #7D006D;
+  text-decoration: underline;
+}
+
 /* Header MOBILE */
 
 
@@ -109,7 +116,12 @@ header .mobile {
 button span {
   color: white;
   font-size: 1rem;
-  font-weight: lighter;
+  weight: lighter;
+}
+
+/*button color change */
+.banner-text button:hover {
+  background-color: #2A0022;
 }
 
 /* About part - DESKTOP */
@@ -196,16 +208,26 @@ button span {
 }
 
 .text a {
-  color: DarkSlateBlue;
+  color: #5A585F;
   text-decoration: none;
 }
 
-.text a:hover {
-  color: #570080;
+/*  color change */
+.text a:link {
+  color: #5A585F;
 }
 
 .text a:visited {
-  color: #CCC4CC;
+ color: #CCC4CC;
+}
+
+ .text a:hover {
+  color: #7D006D;
+  text-decoration: underline;
+}
+
+.side-part .info:hover {
+  background-color: #CCC4CC;
 }
 
 #photo {
@@ -394,10 +416,16 @@ button span {
   letter-spacing: 0.2;
 }
 
-.terms span:hover {
-  color: #570080;
+/* Links - color change */
+.terms a:link {
+  color: #242126;
 }
 
 .terms a:visited {
-  color: #CCC4CC;
+ color: #CCC4CC;
+}
+
+.terms a:hover {
+  color: #7D006D;
+  text-decoration: underline;
 }

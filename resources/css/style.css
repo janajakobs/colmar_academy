@@ -61,9 +61,22 @@ header a:visited {
 }
 
 /* Header MOBILE */
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
 
+  header .desktop .flex .nav {
+    display: none;
+  }
 
-
+  header .mobile {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    margin: 0.2rem 0.2rem;
+  }
+}
 /* Header END */
 
 /* Banner DESKTOP */
@@ -125,6 +138,40 @@ button span {
   transition: background-color 400ms ease-in-out 0s
 }
 
+/* MOBILE version Banner */
+@media only screen and (max-width: 480px) {
+  .banner .flex {
+    flex-direction: column;
+    height: 40rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .banner-image img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-text {
+    width: 100%;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .banner-text h3 {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
+/* Moobile Banner END */
+
 /* About part - DESKTOP */
 .about .flex {
   display: flex;
@@ -168,13 +215,17 @@ button span {
 
 /* side part */
 
-.side-part {
+.side-part-desktop {
   display: flex;
   flex-direction: column;
   width: 40%;
   height: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.side-part-mobile {
+  display: none;
 }
 
 .info {
@@ -227,7 +278,7 @@ button span {
   text-decoration: underline;
 }
 
-.side-part .info:hover {
+.side-part-desktop .info:hover {
   background-color: #CCC4CC;
   transition: background-color 400ms ease-in 0s;
 }
@@ -238,12 +289,68 @@ button span {
   margin: 1rem;
 }
 
+/* About Mobile version */
+@media only screen and (max-width: 480px) {
+  .main-part {
+    display: none;
+  }
+
+  .side-part-desktop {
+    display: none;
+  }
+
+  .side-part-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .side-part-mobile #photo {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .side-part-mobile .info .text {
+    margin-left: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    border: none;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  /*  color change */
+  .text a:link {
+    color: #5A585F;
+  }
+
+  .text a:visited {
+   color: #CCC4CC;
+  }
+
+   .text a:hover {
+    color: #7D006D;
+    text-decoration: underline;
+  }
+
+  .side-part-mobile .info:hover {
+    background-color: #CCC4CC;
+    transition: background-color 400ms ease-in 0s;
+  }
+}
+
 /* Learning part DESKTOP */
 
 .learning {
   display: flex;
   flex-wrap: wrap;
   background-color: #CCC4CC;
+}
+
+.learning-mobile {
+  display: none;
 }
 
 #start {
@@ -334,7 +441,46 @@ button span {
   transition: background-color 100ms ease-in-out 0s
 }
 
-/* Mobile version */
+
+/* Learning part MOBILE */
+@media only screen and (max-width: 480px) {
+  .learning .sections {
+    display: none;
+  }
+
+  .learning {
+    background-color: white;
+    border-top: 0.1rem solid whitesmoke;
+  }
+
+  .learning-mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 0.1rem solid whitesmoke;
+  }
+
+  .learning-mobile h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Montserrat";
+    padding: 1.5rem 2rem;
+    text-align: left;
+    margin: 0.5rem 1rem;
+    background-color: #CCC4CC;
+  }
+
+  /*button color change */
+  .learning-mobile h3:hover {
+    background-color: #2A0022;
+    color: #CCC4CC;
+    transition: background-color 400ms ease-in-out 0s
+  }
+}
+/* Mobile version DONE */
 
 /* Learning section END */
 
@@ -403,6 +549,29 @@ button span {
   width: 100%;
 }
 
+/* Mobile version */
+@media only screen and (max-width: 480px) {
+  .thesis .side-part {
+    display: none;
+  }
+
+  .thesis .video-section {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .thesis .video-text {
+    display: none;
+  }
+
+  .video-section {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0rem;
+  }
+}
+/* Mobile version DONE */
+
+
 /* Footer DESKTOP */
 .footer {
   display: flex;
@@ -438,3 +607,23 @@ button span {
   color: #7D006D;
   text-decoration: underline;
 }
+
+/* footer MOBILE */
+@media only screen and (max-width: 480px) {
+  .footer-text .terms {
+    display: none;
+  }
+
+  .footer-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer .copyrights {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+  }
+}
+/* footer MOBILE END */
